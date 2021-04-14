@@ -1,0 +1,6 @@
+numbers_1 = int(input('Number 1: '))
+numbers_2 = int(input('Number 2: '))
+print(numbers_1,' + ',numbers_2,' = ',numbers_1+numbers_2)
+print(numbers_1,' - ',numbers_2,' = ',numbers_1-numbers_2)
+print(numbers_1,' x ',numbers_2,' = ',numbers_1*numbers_2)
+print(numbers_1,' / ',numbers_2,' = ',numbers_1/numbers_2)

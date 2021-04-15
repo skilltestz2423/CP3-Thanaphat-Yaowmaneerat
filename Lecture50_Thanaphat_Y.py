@@ -11,4 +11,3 @@ plusNumber(1,2)
 minusNumber(5,3)
 mutipliedNumber(2,10)
 devidedNumber(25,5)
-

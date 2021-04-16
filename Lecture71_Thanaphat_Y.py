@@ -1,13 +1,11 @@
 menulist = []
-pricelist =[]
-
 def showBill():
+    totalprice = 0
     print('--------Welcome My Shop--------')
-    sumprice = 0
     for i in range(len(menulist)):
-        sumprice += int(pricelist[i])
-        print('ชื่อเมนู: ',menulist[i],' ราคา: ',pricelist[i],' บาท',sep='')
-        print('ยอดรวมค่าใช้จ่ายทั้งหมดคือ:',sumprice,'บาท')
+        print('ชื่อเมนู: ',menulist[i][0],'ราคา',menulist[i][1],'บาท')
+        totalprice = totalprice + int(menulist[i][1])
+    print('ยอดจ่ายรวมคือ: ',totalprice)
 
 while True:
     menuName = input('ชื่อเมนู: ')
@@ -16,7 +14,6 @@ while True:
         break
     else:
         menuPrice = input('ราคา: ')
-        menulist.append(menuName)
-        pricelist.append(menuPrice)
+        menulist.append([menuName,menuPrice])
+print(menulist)
 showBill()
-
